@@ -105,7 +105,7 @@ const Collection = () => {
 
     const collectionData = await sanityClient.fetch(query)
     // the query returns 1 object inside of an array
-    await setCollection(collectionData[0])
+    setCollection(collectionData[0])
   }
 
   useEffect(() => {
